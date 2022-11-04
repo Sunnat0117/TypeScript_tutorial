@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:types": "tsc && build/main.js"
+    "test:types": "tsc && 2.Basic_types_in_Typescript/main.js"
   },
   "repository": {
     "type": "git",
