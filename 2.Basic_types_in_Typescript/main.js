@@ -1,5 +1,7 @@
-"use strict";
-let a;
-a = 10000;
-let b = 90;
-console.log(a + b);
+
+
+function addSsum (a  ,b) {
+    return a+b
+}
+
+console.log(addSsum(20, '90'))

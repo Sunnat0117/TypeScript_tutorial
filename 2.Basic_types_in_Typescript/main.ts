@@ -1,18 +1,29 @@
-let  a : number;
+interface IUser {
+    name : string,
+    surname : string,
+    login : string,
+    password : string
+}
 
-a = 10_000;
-let b = 90;
+let user : IUser  = { 
+    name : "Sunnat",
+    surname : "Qarshiboyev",
+    login : "Sunnat",
+    password : "password"
+}
+interface IAdmin {
+    name : string; 
+    role : "admin" | "user"    
+}
 
-console.log(a+b)
-const user = {
-    firstName : "Jonh",
-    surName : "Doe",
-    age : 20,
-    skills : {
-        dev : true,
-        devops : true
-    }
+let admin : IAdmin = {
+    ...user,
+    role : "admin"
 
 }
 
-let skill : [number, string] = [1, "Dev"];
+
+console.log(admin)
+
+
+
